@@ -1,0 +1,345 @@
+<!DOCTYPE html>         
+<html>
+	<head >
+		<title> Виселица </title> 
+		<link rel = "shortcut icon" type = "image/x-icon" href = "site.jpg">
+		<meta charset = "UTF-8">
+		<style>
+			body
+			{
+			background-color : gray;
+			}
+		</style>
+	</head>
+
+
+
+	<body >
+		<br>
+		<div id = "title">
+			<p  style = "text-align : center; 
+						font-size : 32px; 
+						font-weight : 800;
+						color : blue;")> 
+			ЗАГАДАНА ВЕЩЬ ИЛИ ПРЕДМЕТ
+			</p>
+		</div>
+		<br><br>
+		
+		<div id = "word" style = "text-align : center;">
+			<p>
+				СЛОВО
+			</p>
+		</div>
+		<br><br><br><br>
+		
+		<div id = "draw" style = "text-align : left; position : fixed;">
+			<img id = "png" src = "0.png">
+		</div>
+		
+		
+		
+		<div id = "alfabet" style = "float:right;">
+			
+			<button id = "А" onclick = "klac('А')" style = "
+							
+							background-color:yellow;
+							height:100px;
+							width:100px;">А
+			</button>
+		
+			<button id = "Б" onclick = "klac('Б')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Б
+			</button>
+			
+			<button id = "В" onclick = "klac('В')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">В
+			</button>
+		
+			<button id = "Г" onclick = "klac('Г')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Г
+			</button>
+			
+			<button id = "Д" onclick = "klac('Д')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Д
+			</button>
+			
+			<button id = "Е" onclick = "klac('Е')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Е
+			</button>
+			
+			<button id = "Ё" onclick = "klac('Ё')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ё
+			</button>
+			
+			<br>
+			
+			<button id = "Ж" onclick = "klac('Ж')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ж
+			</button>
+			
+			
+			
+			<button id = "З" onclick = "klac('З')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">З
+			</button>
+			
+			<button id = "И" onclick = "klac('И')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">И
+			</button>
+			
+			<button id = "Й" onclick = "klac('Й')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Й
+			</button>
+			
+			<button id = "К" onclick = "klac('К')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">К
+			</button>
+			
+			<button id = "Л" onclick = "klac('Л')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Л
+			</button>
+			
+			<button id = "М" onclick = "klac('М')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">М
+			</button>
+			
+			<br>
+			
+			<button id = "Н" onclick = "klac('Н')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Н
+			</button>
+			
+			<button id = "О" onclick = "klac('О')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">О
+			</button>
+			
+			
+			
+			<button id = "П" onclick = "klac('П')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">П
+			</button>
+			
+			<button id = "Р" onclick = "klac('Р')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Р
+			</button>
+			
+			<button id = "С" onclick = "klac('С')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">С
+			</button>
+			
+			<button id = "Т" onclick = "klac('Т')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Т
+			</button>
+			
+			<button id = "У" onclick = "klac('У')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">У
+			</button>
+			
+			<br>
+			
+			<button id = "Ф" onclick = "klac('Ф')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ф
+			</button>
+			
+			<button id = "Х" onclick = "klac('Х')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Х
+			</button>
+			
+			<button id = "Ц" onclick = "klac('Ц')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ц
+			</button>
+			
+			
+			
+			<button id = "Ч" onclick = "klac('Ч')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ч
+			</button>
+			
+			<button id = "Ш" onclick = "klac('Ш')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ш
+			</button>
+			
+			<button id = "Щ" onclick = "klac('Щ')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Щ
+			</button>
+			
+			<button id = "Ъ" onclick = "klac('Ъ')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ъ
+			</button>
+			
+			<br>
+			
+			<button id = "Ы" onclick = "klac('Ы')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ы
+			</button>
+			
+			<button id = "Ь" onclick = "klac('Ь')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ь
+			</button>
+			
+			<button id = "Э" onclick = "klac('Э')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Э
+			</button>
+			
+			<button id = "Ю" onclick = "klac('Ю')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Ю
+			</button>
+			
+			<button id = "Я" onclick = "klac('Я')" style = "
+							background-color:yellow;
+							height:100px;
+							width:100px;">Я
+			</button>
+			
+
+			
+
+		
+		
+		
+		</div>
+		
+
+		
+		
+		
+	<script>
+		function klac(q)
+		{ 
+			
+			if(secret.includes(q))
+			{
+				alert("Есть такая буква в загаданном слове ");
+				var y = document.getElementById(q);
+				y.style = 	"background-color:green; height:100px; width:100px;";
+				
+				for (var j = 0; j < secret.length; j++)
+				{
+					if (secret[j] == q)
+						{
+							ans[j] = q;
+						} 
+					answer = ans.join(" ");
+					x.innerHTML = answer;
+					x.style = 	"font-size:100px; text-align:center; font-weight:90;";
+				}
+			}
+			else
+			{
+				alert("Нет такой буквы в загаданном слове!");
+				var y = document.getElementById(q);
+				y.style = 	"background-color:red; height:100px; width:100px;";
+				numPic+=1;
+				if (numPic==9)
+				{
+					x.innerHTML = "Вы ПОВЕШЕНЫ! Ответ: "+secret;
+					x.style = 	"font-size:100px; text-align:center; font-weight:90;";
+					
+					
+				}
+				
+				z.src = pic[numPic];
+				
+				
+			}
+			
+			if(secret==(ans.join("")))
+			{
+				x.innerHTML = "Вы угадали слово: "+answer;
+				x.style = 	"font-size:100px; text-align:center; font-weight:90;";
+			}
+			
+		};
+		
+		
+		var secret = prompt("Введите секретное слово");
+		var x = document.getElementById("word");
+		var answer = []; 
+				
+		secret = secret.toUpperCase();
+		
+		for (var i = 0; i < secret.length; i++){
+			answer[i] = "_";
+		}  
+		var ans = answer;
+		answer = answer.join(" ");
+		x.innerHTML = answer;
+		x.style = 	"font-size:100px; text-align:center; font-weight:90;";
+	
+		var pic = ["0.png", "1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png"];
+		var numPic = 0;
+		var z = document.getElementById("png");
+		
+		
+		
+		
+		
+	</script>
+
+		
+	</body>
+
+</html>
