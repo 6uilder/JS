@@ -24,7 +24,7 @@ var score_audio = new Audio();
 fly.src = "audio/fly.mp3";
 score_audio.src = "audio/score.mp3";
 
-var gap = 90;
+var gap = 90; //Отступ между колоннами где пролетит птичка
 
 // При нажатии на какую-либо кнопку
 document.addEventListener("keydown", moveUp);
@@ -57,7 +57,7 @@ function draw() {
 
  pipe[i].x--;
 
- if(pipe[i].x == 125) {
+ if(pipe[i].x == 125) { //момент создания нового блока
  pipe.push({
  x : cvs.width,
  y : Math.floor(Math.random() * pipeUp.height) - pipeUp.height
@@ -87,7 +87,7 @@ function draw() {
  ctx.font = "24px Verdana";
  ctx.fillText("Счет: " + score, 10, cvs.height - 20);
 
- requestAnimationFrame(draw);
+ requestAnimationFrame(draw); //постоянный автозапуск функции draw
 }
 
 pipeBottom.onload = draw;
