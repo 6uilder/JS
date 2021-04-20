@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>FlexTraining</title>
+</head>
+<body>
+  <h1>Flexbox dashboard (display: flex)</h1>
+  <h3>flex-direction</h3>
+  <button id="flexDirection_row" onclick="flexDirection_row()">row (по умолчанию)</button>
+  <button id="flexDirection_column" onclick="flexDirection_column()">column</button>
+  <button id="flexDirection_row_reverse" onclick="flexDirection_row_reverse()">row-reverse</button>
+  <button id="flexDirection_column_reverse" onclick="flexDirection_column_reverse()">column-reverse</button>
+  <h3>justify-content</h3>
+  <button id="justifyContent_flex_start" onclick="justifyContent_flex_start()">flex-start (по умолчанию)</button>
+  <button id="justifyContent_flex_end" onclick="justifyContent_flex_end()">flex-end</button>
+  <button id="justifyContent_center" onclick="justifyContent_center()">center</button>
+  <button id="justifyContent_space_between" onclick="justifyContent_space_between()">space-between</button>
+  <button id="justifyContent_space_aroun" onclick="justifyContent_space_aroun()">space-around</button>
+  <h3>align-items</h3>
+  <button id="alignItems_stretch" onclick="alignItems_stretch()">stretch (по умолчанию)</button>
+  <button id="alignItems_flex_end" onclick="alignItems_flex_end()">flex-end</button>
+  <button id="alignItems_center" onclick="alignItems_center()">center</button>
+  <button id="alignItems_flex_start" onclick="alignItems_flex_start()">flex-start</button>
+  <div class="container" id="container">
+    <div class="item"><span>1</span></div>
+    <div class="item"><span>2</span></div>
+    <div class="item"><span>3</span></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

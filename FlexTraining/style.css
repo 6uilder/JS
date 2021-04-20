@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1, h3 {
+  margin-bottom: 20px;
+}
+
+span {
+  font-size: 36px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: darksalmon;
+  outline: none; 
+}
+
+div:nth-child(1).item {
+  background-color: yellow;
+}
+
+div:nth-child(2).item {
+  background-color: green;
+}
+
+div:nth-child(3).item {
+  background-color: darkorchid;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  border: 2px solid brown;
+  width: 400px;
+  height: 400px;
+}
