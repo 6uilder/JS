@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 350px;
+  background: #fff;
+  border-radius: 10px;
+  font-family: sans-serif;
+  box-shadow: 15px 15px 20px rgba(0,0,0, .5);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.sliders {
+  width: 280px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sliders input {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none; /*место ползунка*/
+  background: #e6e6e6;
+  border-radius: 20px;
+  outline: none;
+}
+
+.sliders input:nth-of-type(1)::-webkit-slider-thumb {/*сам ползунок*/
+  -webkit-appearance: none;
+  width: 15px;
+  height: 25px;
+  background: red;
+}
+.sliders input:nth-of-type(2)::-webkit-slider-thumb {/*сам ползунок*/
+  -webkit-appearance: none;
+  width: 15px;
+  height: 25px;
+  background: green;
+}
+.sliders input:nth-of-type(3)::-webkit-slider-thumb {/*сам ползунок*/
+  -webkit-appearance: none;
+  width: 15px;
+  height: 25px;
+  background: blue;
+}
+.sliders input:nth-of-type(4)::-webkit-slider-thumb {/*сам ползунок*/
+  -webkit-appearance: none;
+  width: 15px;
+  height: 25px;
+  background: grey;
+}
+
+.output-box {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+
+.output-box .output {
+  width: 200px;
+  height: 50px;
+  background: yellow;
+}
+
+.output-box .copyBtn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #252525;
+  color:#000;
+  font-size:medium;
+  margin-left: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0, .5);
+}
+.output-box .copyBtn:hover {
+  box-shadow: 0px 0px 0px;
+}
