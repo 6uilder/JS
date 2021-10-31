@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sertificate</title>
+  <style>
+ 
+    #sertif {
+      position: relative;
+      width: 1400px;
+      margin: 0 auto;
+    }
+
+    .input {
+      position: absolute;
+      bottom: 40%;
+      left: 30%;
+    }
+    input {
+      height: 50px;
+      width: 200px;
+      font-size: 24px;
+    }
+    button {
+      height: 50px;
+      width: 100px;
+      margin-left: 20px;
+      background-color: cornflowerblue;
+    }
+    .a {
+      width: 150px;
+      height: 80px;
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    .DR {
+      margin: 0 auto;
+      height: 800px;
+    }
+    .DRdiv {
+  display: flex;
+  justify-content: center;
+}
+.err {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+  </style>
+</head>
+
+<body>
+  <div class="sert-wrap">
+    <div id="sertif">
+      <img src="./img/sertif.png" alt="сертификат">
+      <div class="input">
+        
+        <input type="text" class="inp" autofocus>
+        <button type="button" onclick="btnClick()">OK</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function btnClick() {
+      let inpText = document.querySelector('.inp').value;
+      if (inpText==="24101992") {
+        document.body.innerHTML = "<div class='DRdiv'><img src='./img/DR.jpg' class='DR'></div>";
+      } else {
+        document.body.innerHTML = "<div class='err'><img src='./img/feil.png' class='DR'><div class='a'><a href='./index.html'>Назад</a></div></div>";
+      }
+    }
+    
+
+(function() {
+  document.querySelector('input').addEventListener('keydown', function(e) {
+    let inpText = document.querySelector('.inp').value;
+    if (inpText==="24101992" && e.keyCode === 13) {
+      document.body.innerHTML = "<div class='DRdiv'><img src='./img/DR.jpg' class='DR'></div>";
+    }
+  });
+})();
+  </script>
+</body>
+
+</html>
